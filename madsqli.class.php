@@ -125,7 +125,7 @@ class MADSQLi {
 			$out = $mysqli->query($sql);
 			if(!$out === false) 
 			{
-  				$arr = $out->fetch_all(MYSQLI_ASSOC);
+  				$arr = $out->fetch_array(MYSQLI_ASSOC);
   				return($arr);
 			}
 			else
@@ -246,7 +246,7 @@ class MADSQLi {
 			{
 				if(!$out === false) 
 				{
-  					$arr = $out->fetch_all(MYSQLI_ASSOC);
+  					$arr = $out->fetch_array(MYSQLI_ASSOC);
   					return($arr);
 				}
 			}
